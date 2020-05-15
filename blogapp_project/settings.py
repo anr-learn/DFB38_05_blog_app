@@ -1,3 +1,5 @@
+# DFB38_05_blog_app/blogapp_project/settings.py
+
 """
 Django settings for blogapp_project project.
 
@@ -55,7 +57,7 @@ ROOT_URLCONF = 'blogapp_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, "templates"),],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
