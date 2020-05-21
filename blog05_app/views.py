@@ -32,7 +32,7 @@ class BlogDetailView(DetailView):
 	# to access the view.
 	# If you provide context_object_name explicitly,
 	# you use that instead of 'object'.
-	###@@@context_object_name = "all_block_post_objects"
+	context_object_name = "blog_post_detail_object"
 
 
 
