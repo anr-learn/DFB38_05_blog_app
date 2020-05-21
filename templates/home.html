@@ -7,6 +7,10 @@
     <!-- NOTE that 'for' variable 'blogpost is what you must use
          in the url as 'blogpost.pk' - gets the primary key / id
          of the 'current' blogpost obj.
+         Also not that the URL template specifies a reverse lookup
+         using 'post_detail' to find the /post/PK/  aka
+            /post/<int:pk>/ 
+         url in the blog05_app/urls.py list of urlpatterns.
     -->
 	{% for blogpost in all_block_post_objects %}
 		<div class="post-entry">
