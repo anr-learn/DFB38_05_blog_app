@@ -1,0 +1,17 @@
+<!--  templates/ post_detail.html  -->
+
+{% extends 'base.html' %}
+
+<!--  NOTE that 'content' is a name we name up, not a reserved / keyword -->
+{% block content %}
+<div class="post-entry">
+ <!--  NOTE that 'object' is a name provided automatically by Django.  -->
+ <!--       Can also use the model class name, lower-cased: -->
+ <h2>{{ object.postTitle }}</h2>
+ <p>{{ object.postBody }}</p>
+</div>
+{% endblock content %}
+
+
+
+<!-- -->

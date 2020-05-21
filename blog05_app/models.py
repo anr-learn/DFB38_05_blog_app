@@ -6,6 +6,10 @@ from django.db import models
 class BlogPost(models.Model):
 	""" A post to the blog """
 
+	# NOTE Django adds a primary key field 'id' that contains
+	# an auto-incrementing int value, starting at 1.
+	# Ref'd as 'id' or 'pk'
+
 	postTitle = models.CharField(max_length=200)
 	# many-to-one (many posts per each author)
 	# (Each post has only 1 author)
